@@ -6,7 +6,7 @@ import java.security.SignedObject;
  * Represents a singleton - a class that can have at most one instance at
  * any given time, accessible to clients from a well-known access point.
  */
-public class Singleton {
+class Singleton {
     private static Singleton instance;
 
     private Singleton() {}
@@ -24,12 +24,12 @@ public class Singleton {
 
         return instance;
     }
+}
 
-    /**
-     * Example usage.
-     * 
-     * @param args
-     */
+/**
+ * Example usage of the singleton design pattern.
+ */
+class SingletonPattern {
     public static void main(String[] args) {
         Singleton singletonInstance = Singleton.getInstance();
         
