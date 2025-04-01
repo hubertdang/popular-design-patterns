@@ -9,7 +9,8 @@ import java.security.SignedObject;
 class Singleton {
     private static Singleton instance;
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     /**
      * Provides access to the instance of the singleton. If the instance
@@ -32,7 +33,7 @@ class Singleton {
 class SingletonPattern {
     public static void main(String[] args) {
         Singleton singletonInstance = Singleton.getInstance();
-        
+
         if (Singleton.getInstance() == singletonInstance) {
             System.out.println("Singleton.getInstance() should return the same instance.");
         }
