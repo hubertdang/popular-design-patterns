@@ -22,18 +22,22 @@ public interface Builder {
 class ChineseBuilder implements Builder {
     private ProductMadeInChina result;
 
+    @Override
     public void reset() {
         result = new ProductMadeInChina();
     }
 
+    @Override
     public void buildStepA() {
         result.doThis();
     }
 
+    @Override
     public void buildStepB() {
         result.doThat();
     }
 
+    @Override
     public void buildStepZ() {
         result.doSomethingElse();
     }
@@ -50,18 +54,22 @@ class ChineseBuilder implements Builder {
 class VietnameseBuilder implements Builder {
     private ProductMadeInVietnam result;
 
+    @Override
     public void reset() {
         result = new ProductMadeInVietnam();
     }
 
+    @Override
     public void buildStepA() {
         result.doSomeStuff();
     }
 
+    @Override
     public void buildStepB() {
         result.doSomethingOriginal();
     }
 
+    @Override
     public void buildStepZ() {
         result.doThisThing();
     }
