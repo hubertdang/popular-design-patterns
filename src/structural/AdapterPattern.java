@@ -53,7 +53,7 @@ class Adapter implements ClientInterface {
     }
 
     private Object convertToServiceFormat(Object data) {
-        Object specialData = new Object(); 
+        Object specialData = new Object();
         // do stuff here to convert the data to service format
         return specialData;
     }
@@ -62,7 +62,7 @@ class Adapter implements ClientInterface {
 /**
  * Example usage of the adapter design pattern.
  */
-class AdapterPattern  {
+class AdapterPattern {
     public static void main(String[] args) {
         Client client = new Client();
         client.doSomething();
