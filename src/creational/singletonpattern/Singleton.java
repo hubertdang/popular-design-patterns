@@ -1,12 +1,10 @@
-package creational;
-
-import java.security.SignedObject;
+package creational.singletonpattern;
 
 /**
  * Represents a singleton - a class that can have at most one instance at
  * any given time, accessible to clients from a well-known access point.
  */
-class Singleton {
+public class Singleton {
     private static Singleton instance;
 
     private Singleton() {
@@ -24,18 +22,5 @@ class Singleton {
         }
 
         return instance;
-    }
-}
-
-/**
- * Example usage of the singleton design pattern.
- */
-class SingletonPattern {
-    public static void main(String[] args) {
-        Singleton singletonInstance = Singleton.getInstance();
-
-        if (Singleton.getInstance() == singletonInstance) {
-            System.out.println("Singleton.getInstance() should return the same instance.");
-        }
     }
 }
